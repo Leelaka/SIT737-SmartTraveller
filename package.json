@@ -1,0 +1,24 @@
+{
+  "name": "sit737-smarttraveller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leelaka/SIT737-SmartTraveller.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leelaka/SIT737-SmartTraveller/issues"
+  },
+  "homepage": "https://github.com/Leelaka/SIT737-SmartTraveller#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^15.14.0"
+  }
+}
