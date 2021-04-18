@@ -1,11 +1,29 @@
 <html>
     <head>
-        <title>Smart Traveller</title>
+        <title>Smart Traveller - Welcome</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body>
-        <h1>SIT737 Test run</h1>
-         
+        <div id="container1">
+        <h1 class="label"> Smart Traveller </h1>
+        <div id="container2">
+                <h1 class="label"> Login </h1>
+        </div>
+        <div id="container">
+        <br>
+        <h1 class="label"> Login </h1>
+        <input type="text" id="us3ername" name="username" placeholder="USERNAME"><br><br>
+        <input type="text" id="password" name="password" placeholder="PASSWORD"><br><br>  
+
+        <button type="button" id="btn_login" onclick="submit()"> LOGIN </button>
+        <br><br>
+        <button type="button" id="btn_register" onclick="register()"> REGISTER </button>
+        <br>
+        <button type="button" id="btn_reset" onclick="reset()"> RESET </button>
+        <br>
+        </div>
+        </div>
         <script src="./js/script.js"></script>
     </body>
 </html>
