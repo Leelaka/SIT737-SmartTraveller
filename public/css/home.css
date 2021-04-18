@@ -1,0 +1,26 @@
+body{
+    background-color: #f7d794;
+}
+
+.brand-logo.logo{
+    color: black;
+    margin-left: 50px; 
+    font-size: 30px;
+}
+
+.shift{
+    margin-right: 50px;
+}
+
+.right{
+    margin-left: 150px;
+}
+
+.text-size{
+    font-size: 20px;
+    color: black;
+}
+
+.nav-wrapper{
+    background-color: #ffffff;
+}

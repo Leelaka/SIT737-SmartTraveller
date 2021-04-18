@@ -19,6 +19,8 @@
   "homepage": "https://github.com/Leelaka/SIT737-SmartTraveller#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.4",
     "node": "^15.14.0"
   }
 }

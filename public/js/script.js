@@ -1,3 +1,5 @@
-$(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
+// $(document).ready(function(){
+//   alert("jQuery loaded");
+// });
+
+
