@@ -1,3 +1,4 @@
+
 .heading{
     font-size: 50px;
     text-align: center;
@@ -13,7 +14,7 @@
     margin-bottom: 50px;
 }
 
-.login{
+.signup{
     font-size: 30px;
 }
 
@@ -24,3 +25,5 @@
 body{
     background-color: #f7d794;
 }
+
+
