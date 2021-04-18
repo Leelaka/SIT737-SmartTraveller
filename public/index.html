@@ -3,27 +3,39 @@
         <title>Smart Traveller - Welcome</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     </head>
     <body>
-        <div id="container1">
-        <h1 class="label"> Smart Traveller </h1>
-        <div id="container2">
-                <h1 class="label"> Login </h1>
+    <!--container-->
+    <div class="row">
+      <div class="col s12 heading">Smart Traveller</div>
+      <div class="col s6 text">Welcome</div>
+      <div class="col s6 login">Log In
+        <div class="row height">
+            <div class="input-field col s8">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
         </div>
-        <div id="container">
-        <br>
-        <h1 class="label"> Login </h1>
-        <input type="text" id="us3ername" name="username" placeholder="USERNAME"><br><br>
-        <input type="text" id="password" name="password" placeholder="PASSWORD"><br><br>  
-
-        <button type="button" id="btn_login" onclick="submit()"> LOGIN </button>
+        <div class="row height">
+            <div class="input-field col s8">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Login</button>
+        <a class="btn waves-effect waves-light">Reset</a> 
         <br><br>
-        <button type="button" id="btn_register" onclick="register()"> REGISTER </button>
-        <br>
-        <button type="button" id="btn_reset" onclick="reset()"> RESET </button>
-        <br>
+        <a class="btn waves-effect waves-light">Sign Up</a>
         </div>
-        </div>
+    </div>
+
+
         <script src="./js/script.js"></script>
     </body>
 </html>
