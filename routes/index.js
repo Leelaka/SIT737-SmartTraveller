@@ -1,3 +1,4 @@
 module.exports={
-    signUP: require('./signUp')
+    signUP: require('./signuproute'),
+    logIn: require('./loginroute')
 };

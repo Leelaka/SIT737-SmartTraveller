@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
     </head>
     <body>
     <!--container-->
@@ -17,12 +16,12 @@
       <div class="col s6 signup">Sign Up
         <div class="row height">
             <div class="input-field col s8">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
+                <input id="username" type="text" class="validate">
+                <label for="username">Username</label>
             </div>
             <div class="input-field col s8">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
             </div>
             <div class="input-field col s8">
                 <input id="birthdate" type="text" class="datepicker">   
@@ -41,11 +40,11 @@
                 <label for="password">Password</label>
             </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Sign Up</button>
-        <a class="btn waves-effect waves-light">Clear</a> 
+        <button class="btn waves-effect waves-light" type="submit" onclick='submit()' name="action">Sign Up</button>
+        <a class="btn waves-effect waves-light" onclick='clear()'>Clear</a> 
         <br>
-        <p>Or</p>
-        <a class="btn waves-effect waves-light">Login</a>  
+        <p>Already a user?</p>
+        <a class="btn waves-effect waves-light" onclick="back()">Login</a>  
         </div>
     </div>
         <script src="/js/signup.js"></script>

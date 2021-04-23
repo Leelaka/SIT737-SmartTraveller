@@ -18,12 +18,8 @@
       <div class="col s6 login">Log In
         <div class="row height">
             <div class="input-field col s8">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-            </div>
-                <div class="input-field col s8">
-                <input id="birthdate" type="text" class="datepicker">   
-                <label for="birthdate">Date of Birth</label>
+                <input id="username" type="text" class="validate">
+                <label for="username">username</label>
             </div>
         </div>
         <div class="row height">
@@ -32,10 +28,10 @@
                 <label for="password">Password</label>
             </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Login</button>
-        <a class="btn waves-effect waves-light">Reset</a> 
+        <a class="btn waves-effect waves-light" onclick='submit()'>Login</a>
+        <a class="btn waves-effect waves-light" onclick='clear()'>Reset</a> 
         <br><br>
-        <a class="btn waves-effect waves-light">Sign Up</a>
+        <a class="btn waves-effect waves-light" onclick='Signup()'>Sign Up</a>
         </div>
     </div>
 

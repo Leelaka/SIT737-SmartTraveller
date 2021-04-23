@@ -1,8 +1,7 @@
-
-const connectDB = require('../models/mongodb');
+const accountDB = require('../models/mongodb');
 
 const createAccount=(account,res) => {
-    connectDB.insertAccount(account,res)
+    accountDB.userAccounts(account,res);
 }
 
 module.exports ={
