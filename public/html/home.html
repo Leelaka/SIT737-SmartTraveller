@@ -5,23 +5,117 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-            
+        <!--use icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo logo">Smart Traveller</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="shift"><a href="" class="text-size">Plan</a></li>
-                    <li class="shift"><a href="" class="text-size">Guides</a></li>
-                    <li class="shift"><a href="" class="text-size">Journals</a></li>
-                    <li class="shift right"><a href="" class="text-size">Account</a></li>
-                </ul>
-            </div>
-        </nav> 
- 
-        <script src="/js/script.js"></script>
+    <!--menu bar-->
+        <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="./home.html" class="brand-logo">Smart Traveller</a>
+                        <a href="#" data-target="mobile.nav" class="sidenav-trigger">
+                        <i class="material-icons"> menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#plan"> Plan </a>
+                            </li>
+                            <li>
+                                <a href="#guide"> Guide </a>
+                            </li>
+                            <li>
+                                <a href="#journal"> Journals </a>
+                            </li>
+                            <li>
+                                <a href="#schedule"> Schedule </a>
+                            </li>
+                            <li>
+                            <a class="dropdown-trigger" href="#account" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--sidebar menu-->
+        <ul class="sidenav" id="mobile.nav">
+           <li>
+               <a href="#plan"> Plan </a>
+           </li>
+           <li>
+               <a href="#guide"> Guide </a>
+           </li>
+           <li>
+               <a href="#journal"> Journals </a>
+           </li>
+           <li>
+               <a href="#Schedule"> Schedule </a>
+           </li>
+           <li>
+           <a class="dropdown-trigger" href="#account" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a>
+           </li>
+        </ul>
+
+        <!--slide bar-->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                <img src="../assets/img4.jpeg">
+                <div class="caption center-align">
+                    <h3>Ready to hit the road?</h3>
+                    <h5 class="light grey-text text-lighten-3"> Map your route, discover amazing sceneries and out of all be under budget! </h5>
+                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                </li>
+                <li>
+                <img src="../assets/img3.jpeg">
+                <div class="caption center-align">
+                    <h3>Let us help you find a new place</h3>
+                    <h5 class="light grey-text text-lighten-3">  </h5>
+                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                </li>
+                <li>
+                <img src="../assets/img2.jpeg">
+                <div class="caption center-align">
+                    <h3>Make traveling fun</h3>
+                    <h5 class="light grey-text text-lighten-3"> Test slide 2 </h5>
+                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                </li>
+                <li>
+                <img src="../assets/img1.jpeg">
+                <div class="caption center-align">
+                    <h3>We plan. You pack.</h3>
+                    <h5 class="light grey-text text-lighten-3"> Test slide 2 </h5>
+                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+        
+        <script src="/js/home.js"></script>
     </body>
 </html>
