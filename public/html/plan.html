@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Smart Traveller - Plan</title>
+        <link rel="stylesheet" type="text/css" href="/css/plan.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--use icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--map-->
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    </head>
+    <body id="home" class="scrollspy">
+    <!--menu bar-->
+        <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="./home.html" class="brand-logo">Smart Traveller</a>
+                        <a href="#" data-target="mobile.nav" class="sidenav-trigger">
+                        <i class="material-icons"> menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="./plan.html"> Plan </a>
+                            </li>
+                            <li>
+                                <a href="./guide.html"> Guide </a>
+                            </li>
+                            <li>
+                                <a href="./journal.html"> Journals </a>
+                            </li>
+                            <li>
+                                <a href="./schedule.html"> Schedule </a>
+                            </li>
+                            <li>
+                            <a class="dropdown-trigger" href="#account" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--map-->
+       <!--<input id="textinput" type="text"></input>--> 
+        <div id='map'></div>
+        <!--sidebar menu-->
+        <ul class="sidenav" id="mobile.nav">
+           <li>
+               <a href="#plan"> Plan </a>
+           </li>
+           <li>
+               <a href="#guide"> Guide </a>
+           </li>
+           <li>
+               <a href="#journal"> Journals </a>
+           </li>
+           <li>
+               <a href="#Schedule"> Schedule </a>
+           </li>
+           <li>
+           <a class="dropdown-trigger" href="#account" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a>
+           </li>
+        </ul>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+      <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <script src="/js/plan.js"></script>
+    </body>
+</html>
