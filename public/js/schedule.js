@@ -3,3 +3,6 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown(); //dropdown 
 
 });
+
+const sideNavigation = document.querySelector('.sidenav');
+M.Sidenav.init(sideNavigation, {});

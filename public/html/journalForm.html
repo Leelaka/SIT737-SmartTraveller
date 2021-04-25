@@ -15,19 +15,34 @@
       <br><br>
       <div class="col s12 center signup"><h5>Journal Form</h5>
       <br><br>
-        <div class="row height">
-            <div class="input-field col s8">
-                <input id="logo" type="text" class="validate" value="place">
-                <label for="logo">Logo</label>
+
+      <div id="form1">
+        <div class="col s12 m12">
+            <div class="input-field">
+                <input id="destination" type="text" class="validate" value="place">
+                <label for="destination">The Destination</label>
             </div>
-            <div class="input-field col s8">
-                <input id="place" type="text" class="validate">
-                <label for="place">Place</label>
+            <div class="input-field ">
+                <input id="comfort" type="text" class="validate">
+                <label for="comfort">Comfort of trip</label>
             </div>
-            <div class="input-field col s8">
+            <div class="input-field">
+                <input id="budget" type="text" class="validate">
+                <label for="budget">Total cost</label>
+            </div>
+            <div class="text-field">
                 <input id="description" type="text" class="validate">
                 <label for="description">Description</label>
             </div>
+            <div class="text-field">
+                <input id="link" type="text" class="validate">
+                <label for="link">Additional information(links,etc..)</label>
+            </div>
+            <div class="text-field">
+                <input id="rate" type="text" class="validate">
+                <label for="rate">Your rating for this trip</label>
+            </div>
+        </div>
         </div>
         <button class="btn waves-effect waves-light" type="submit" onclick='submit()' name="action">Create</button>
         <a class="btn waves-effect waves-light" onclick='clear()'>Clear</a> 

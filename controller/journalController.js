@@ -1,4 +1,4 @@
-const accountDB = require('../models/mongodb');
+const accountDB = require('../models/journelEntry');
 
 const createJournal = (journal,res) => {
     accountDB.userJournals(journal,res);

@@ -5,15 +5,13 @@ const url = "mongodb+srv://Smart:Traveller@cluster0.e0dex.mongodb.net/accounts?r
 const client = new MongoClient(url, { useNewUrlParser:true, useUnifiedTopology:true});
 
 let accountCollections;
-let journalCollections;
+// let journalCollections;
 
 //establish connection
 const connectDB = () => {
     client.connect((err, db) =>{
         accountCollections = client.db('accounts').collection('account');
         if(!err) console.log('account database connected!!');
-        journalCollections = client.db('accounts').collections('journal');
-        if(!err) console.log('journal database connected!!');
     });
 };
 
@@ -28,22 +26,6 @@ const userAccounts = (account,res)=>{
         else {
             accountCollections.insert(account,(err,result)=>{
                 console.log('Congrats, your account has been created!');
-                res.send({result:200});
-            });
-        }
-      });
-};
-
-//post journal entry
-const userJournals = (journal,res)=>{
-    journalCollections.findOne({journalpost: journal.post},function(err,exist){
-        if (exist) {
-            console.log('existing post in the database, change title!');
-            res.send({result:404});
-        }
-        else {
-            journalCollections.insert(journal,(err,result)=>{
-                console.log('Congrats, your entry has been created!');
                 res.send({result:200});
             });
         }
@@ -71,10 +53,9 @@ const verify=(account,res)=>{
         });
 };
 
-
 module.exports = {
     connectDB,
     userAccounts,
     userInfo,
     verify,
-    userJournals};
+};
