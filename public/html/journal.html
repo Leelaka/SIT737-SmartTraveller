@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Smart Traveller - Journal</title>
+        <link rel="stylesheet" type="text/css" href="/css/journal.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--use icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body id="home" class="scrollspy">
+    <!--menu bar-->
+    <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="./home.html" class="brand-logo">Smart Traveller</a>
+                        <a href="#" data-target="mobile.nav" class="sidenav-trigger">
+                        <i class="material-icons"> menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="./plan.html"> Plan </a>
+                            </li>
+                            <li>
+                                <a href="./guide.html"> Guide </a>
+                            </li>
+                            <li>
+                                <a href="./journal.html"> Journals </a>
+                            </li>
+                            <li>
+                                <a href="./schedule.html"> Schedule </a>
+                            </li>
+                            <li>
+                            <a class="dropdown-trigger" href="#account" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--sidebar menu-->
+        <ul class="sidenav" id="mobile.nav">
+           <li>
+               <a href="./plan.html"> Plan </a>
+           </li>
+           <li>
+               <a href="./guide.html"> Guide </a>
+           </li>
+           <li>
+               <a href="./journal.html"> Journals </a>
+           </li>
+           <li>
+               <a href="./schedule.html"> Schedule </a>
+           </li>
+           <li>
+           <a class="dropdown-trigger" href="#account" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a>
+           </li>
+        </ul>
+
+<!--searchbar-->
+        <div id="search" class="section section-search teal darken-1 white-text center scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h3>Search</h3>
+                        <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Grampians, Great Ocean Road, Wilsonprom, ..." onclick="search()">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+<!--boxes-->
+        <div class="section section-icons lighten-4 center">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card-panel">
+                            <i class="material-icons large teal-text">place</i>
+                            <h4 class="font">Geelong</h4>
+                            <p class="font">Et cupidatat nulla laborum sint sunt sunt velit nulla esse veniam in aliqua voluptate in. Consectetur est dolor commodo sit ea irure dolor. Proident fugiat adipisicing amet deserunt irure consectetur ea. Eu aliquip minim non dolore esse quis velit. Duis nostrud amet velit enim et eiusmod reprehenderit commodo cupidatat dolor minim. Proident esse anim cupidatat magna.</p>
+                        </div>
+                    </div>
+                     <div class="col s12 m6">
+                        <div class="card-panel">
+                            <i class="material-icons large teal-text">place</i>
+                            <h4 class="font">GreatOcean Road</h4>
+                            <p class="font">Et cupidatat nulla laborum sint sunt sunt velit nulla esse veniam in aliqua voluptate in. Consectetur est dolor commodo sit ea irure dolor. Proident fugiat adipisicing amet deserunt irure consectetur ea. Eu aliquip minim non dolore esse quis velit. Duis nostrud amet velit enim et eiusmod reprehenderit commodo cupidatat dolor minim. Proident esse anim cupidatat magna.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                            <div class="card-panel">
+                                <i class="material-icons large teal-text">place</i>
+                                <h4 class="font">Wilsonsprom</h4>
+                                <p class="font">Et cupidatat nulla laborum sint sunt sunt velit nulla esse veniam in aliqua voluptate in. Consectetur est dolor commodo sit ea irure dolor. Proident fugiat adipisicing amet deserunt irure consectetur ea. Eu aliquip minim non dolore esse quis velit. Duis nostrud amet velit enim et eiusmod reprehenderit commodo cupidatat dolor minim. Proident esse anim cupidatat magna.</p>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <a class="waves-effect waves-light btn" onclick="launch()">Create a Journal</a>
+        <div>
+
+        </div>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="./account.html">Profile</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Dropdown Structure2 -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="./account.html">Profile</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="../index.html">Log Out</a></li>
+        </ul>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+        
+        <script src="/js/journal.js"></script>
+    </body>
+</html>

@@ -10,6 +10,7 @@ app.use(express.static(__dirname + '/public'));
 //routes
 app.use('/signup', Routes.signUP.signuproute);
 app.use('/login', Routes.logIn.loginroute);
+app.use('/journal', Routes.Journal.journalroute);
 
 mongoDB.connectDB();
 
